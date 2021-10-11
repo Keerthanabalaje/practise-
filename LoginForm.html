@@ -1,0 +1,55 @@
+<html>
+    <head> 
+        <title>Login Application</title>
+        <style>
+            body {
+                font-size : 100%;
+                width:960px;
+            }
+            #login_id {
+                width: 40%;
+                border: medium solid green;
+                padding: 0 10px 10px 10px  ;
+                margin: 0 auto;
+            }
+            h2 {
+                color:green;
+                font-family: 'Courier New', Courier, monospace;
+            }
+            h2::first-letter{
+                font-size : 130%;
+            }
+            #USname,#PSwrd {
+                font-size : 110%;
+            }
+
+            #Lo_gin:hover{
+                color:red
+            }
+            #Lo_gin:active {
+                color:green
+            }
+            #username,#password {
+                width:100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="login_id">
+            <h2><span id ="logIn_span" >L</span>ogin</span></h2>
+        <form>
+            <p>
+                <label for="username"><b><span id='USname'>Username</span></b></label><br>
+                <input type="email" name="username" id="username" placeholder="Enter your email address" required size ='50'>
+            </p>
+            <p>
+                <label for="password"><b><span id='PSwrd'>Password</span></b></label><br>
+                <input type='password' name="password" id="password" placeholder="Enter your password" required size ='50'>
+            </p>
+            <p>
+                <input type = 'submit' id="Lo_gin" value="Login">
+            </p>
+        </form>
+        </div>        
+    </body>
+</html>
